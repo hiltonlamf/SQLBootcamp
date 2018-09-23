@@ -1,0 +1,5 @@
+SELECT cd.bookings.starttime,cd.facilities.name FROM cd.Bookings
+INNER JOIN cd.facilities
+ON cd.bookings.facid = cd.facilities.facid
+WHERE starttime >= '2012-09-21' AND starttime < '2012-09-22'
+ORDER BY starttime;

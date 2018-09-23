@@ -1,0 +1,5 @@
+SELECT cd.bookings.starttime,cd.members.firstname,cd.members.surname FROM cd.Bookings
+INNER JOIN cd.members
+ON cd.bookings.memid = cd.members.memid
+WHERE firstname = 'David' AND surname = 'Farrell'
+ORDER BY bookings.starttime;
